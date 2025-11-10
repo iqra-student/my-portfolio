@@ -30,35 +30,53 @@ export const Skills = () => {
 
   return (
     <section className="skill" id="skills">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
-                        </Carousel>
-                    </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className="skill-bx wow zoomIn">
+              <h2>Skills</h2>
+              <p>
+                I am proficient in building modern web applications using <strong>React</strong> for dynamic front-end development
+                and <strong>ASP.NET</strong> for back-end APIs and server-side applications.
+                I also have experience with <strong>HTML, CSS, JavaScript, Bootstrap, and responsive design</strong>.
+                My focus is on writing clean, maintainable code and delivering engaging user experiences.
+              </p>
+              <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                <div className="item">
+                  <img src={meter1} alt="React JS" />
+                  <h5>React JS</h5>
                 </div>
+                <div className="item">
+                  <img src={meter2} alt="ASP.NET" />
+                  <h5>ASP.NET</h5>
+                </div>
+                <div className="item">
+                  <img src={meter3} alt="JavaScript" />
+                  <h5>JavaScript</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="Databases" />
+                  <h5>XAMPP / MongoDB</h5>
+                </div>
+                <div className="item">
+                  <img src={meter2} alt="Bootstrap & Tailwind" />
+                  <h5>Bootstrap & Tailwind</h5>
+                </div>
+                <div className="item">
+                  <img src={meter3} alt="Git & GitHub" />
+                  <h5>Git & GitHub</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="Responsive Design" />
+                  <h5>Responsive Design</h5>
+                </div>
+              </Carousel>
+
             </div>
+          </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+      </div>
+      <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   )
 }
