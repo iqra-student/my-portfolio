@@ -31,7 +31,7 @@ export const Projects = () => {
     },
     {
       title: "Full Stack Restaurant App",
-      description: "Design & Development",
+      description: "ASP.NET React Food Ordering Project",
       imgUrl: projImg4,
       githubUrl: "https://github.com/iqra-student/FullStackRestaurantApp"
     },
