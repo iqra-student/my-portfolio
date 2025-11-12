@@ -4,6 +4,8 @@ import cors from "cors";
 import nodemailer from "nodemailer";
 import dotenv from "dotenv";
 
+import cors from "cors";
+app.use(cors({ origin: "*" })); // allow all origins for testing
 dotenv.config();
 
 console.log("EMAIL_USER:", process.env.EMAIL_USER);
