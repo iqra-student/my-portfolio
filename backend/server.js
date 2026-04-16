@@ -7,16 +7,17 @@ dotenv.config();
 
 const app = express();
 
-// ✅ Local CORS (allow frontend Vite)
+
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://my-portfolio-j88h.onrender.com/contact"
+    "https://my-portfolio-9w5s-d4q5l0yjk-iqras-projects-a5932b7a.vercel.app"
   ],
-  methods: ["GET", "POST"],
-  allowedHeaders: ["Content-Type"]
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type"],
 }));
 
+app.options("*", cors());
 app.use(express.json());
 
 // Email transporter
