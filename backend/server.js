@@ -9,7 +9,12 @@ const app = express();
 
 // ✅ Local CORS (allow frontend Vite)
 app.use(cors({
-  origin: "http://localhost:5173"
+  origin: [
+    "http://localhost:5173",
+    "https://my-portfolio-j88h.onrender.com/contact"
+  ],
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"]
 }));
 
 app.use(express.json());
