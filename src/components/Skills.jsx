@@ -36,10 +36,9 @@ export const Skills = () => {
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
               <p>
-                I am proficient in building modern web applications using <strong>React</strong> for dynamic front-end development
-                and <strong>ASP.NET</strong> for back-end APIs and server-side applications.
-                I also have experience with <strong>HTML, CSS, JavaScript, Bootstrap, and responsive design</strong>.
-                My focus is on writing clean, maintainable code and delivering engaging user experiences.
+                I am a full-stack developer with experience in both the <strong>MERN stack (MongoDB, Express, React, Node.js)</strong> and <strong>ASP.NET</strong> for building scalable web applications.
+                I specialize in creating responsive, user-friendly interfaces using <strong>React</strong> and modern web technologies.
+                My focus is on writing clean, maintainable code and delivering efficient, real-world solutions.
               </p>
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                 <div className="item">

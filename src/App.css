@@ -421,43 +421,83 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
   margin-bottom: 24px;
 }
+
+/* Overlay background */
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  opacity: 0.85;
+  opacity: 0.9;
   position: absolute;
   width: 100%;
-  height: 0;
-  transition: 0.4s ease-in-out;
-}
-.proj-imgbx:hover::before {
   height: 100%;
+  top: -100%; /* start hidden from top */
+  left: 0;
+  transition: 0.4s ease-in-out;
+  z-index: 1;
 }
+
+/* Slide down effect */
+.proj-imgbx:hover::before {
+  top: 0;
+}
+
+/* Text + content */
 .proj-txtx {
   position: absolute;
   text-align: center;
-  top: 65%;
+  top: -100%; /* hidden initially */
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  z-index: 2;
+  color: white;
 }
+
+/* Show content */
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
+  transform: translate(-50%, -50%);
   opacity: 1;
 }
+
+/* Title */
 .proj-txtx h4 {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.8px;
-  line-height: 1.1em;
+  line-height: 1.2em;
 }
+
+/* Description */
 .proj-txtx span {
+  display: block;
   font-style: italic;
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 0.8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.proj-buttons {
+  margin-top: 10px;
+}
+
+.proj-buttons a {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 14px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.proj-buttons a:hover {
+  background: black;
+  color: white;
 }
 .background-image-right {
   top: 20%;

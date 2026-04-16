@@ -4,6 +4,7 @@ import projImg1 from "../assets/image/project-img1.png";
 import projImg2 from "../assets/image/project-img2.png";
 import projImg3 from "../assets/image/project-img3.png";
 import projImg4 from "../assets/image/project-img4.png";
+import projImg5 from "../assets/image/project-im4.png"
 import colorSharp2 from "../assets/image/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,6 +12,12 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
 
   const projects = [
+     {
+      title: "Full Stack Ecommerce Website",
+      description: "MERN STACK Ecommerce Project",
+      imgUrl: projImg5,
+      githubUrl: "https://ecommerce-website-neon-omega.vercel.app/"
+    },
     {
       title: "React Dice Game",
       description: "Interactive dice rolling game in React.",
@@ -35,6 +42,7 @@ export const Projects = () => {
       imgUrl: projImg4,
       githubUrl: "https://github.com/iqra-student/FullStackRestaurantApp"
     },
+   
   ];
 
 
@@ -47,12 +55,6 @@ export const Projects = () => {
               {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Projects</h2>
-                  <p> My projects showcase my expertise in React and ASP.NET.
-                    I have experience with front-end technologies like HTML, CSS, JavaScript, Bootstrap,
-                    and frameworks like React for building dynamic UIs.
-                    On the back-end, I use ASP.NET for creating APIs and server-side applications.
-                    I’m always learning new tools and best practices to improve my skills.</p>
-
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     {/* ...Nav items */}
                     <Tab.Content>
