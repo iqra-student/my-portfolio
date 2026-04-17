@@ -4,7 +4,8 @@ import projImg1 from "../assets/image/project-img1.png";
 import projImg2 from "../assets/image/project-img2.png";
 import projImg3 from "../assets/image/project-img3.png";
 import projImg4 from "../assets/image/project-img4.png";
-import projImg5 from "../assets/image/project-im4.png"
+import projImg5 from "../assets/image/project-im4.png";
+import projimg6 from "../assets/image/project-img6.png";
 import colorSharp2 from "../assets/image/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -41,6 +42,12 @@ export const Projects = () => {
       description: "ASP.NET React Food Ordering Project",
       imgUrl: projImg4,
       githubUrl: "https://github.com/iqra-student/FullStackRestaurantApp"
+    },
+    {
+      title: "WordPress Website Redesign",
+      description: "Wordpress website redesign for a local business.",
+      imgUrl: projimg6,
+      githubUrl: "https://iqra.nextgendebug.com/"
     },
    
   ];
